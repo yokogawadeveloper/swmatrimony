@@ -1,0 +1,18 @@
+<div class="main-container bg-dark text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Why others choose us?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4" *ngFor="let feature of features">
+                <div class="card bg-purple h-100">
+                    <div class="card-body text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i [class]="feature.icon"></i>
+                        </div>
+                        <h5 class="card-title">{{ feature.title }}</h5>
+                        <p class="card-text">{{ feature.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

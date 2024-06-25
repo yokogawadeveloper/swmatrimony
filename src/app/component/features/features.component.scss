@@ -1,0 +1,53 @@
+.main-container {
+    // background: linear-gradient(to right, #300, #603);
+    background-image: url(../../../assets/backgrounds/features-bg.png);
+    color: white;
+    padding: 3rem 1rem;
+}
+
+.main-container::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #ff0066;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.feature-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+}
+
+.icon-circle {
+    background-color: #4b0082;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+}
+
+.icon-circle i {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 0.9rem;
+}

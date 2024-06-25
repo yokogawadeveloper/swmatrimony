@@ -1,0 +1,70 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/backgrounds/introbg.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    /* Adjust these custom properties to the actual heights of your header and footer */
+}
+
+.bg-dark {
+    background-color: #1a0933 !important;
+}
+
+.bg-purple {
+    background-color: #3c1f6e;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.border-highlight {
+    border: 2px solid #9370db;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-subtitle {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.btn-light {
+    border-radius: 20px;
+}
+
+.card-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #9370db;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin-left: 15px;
+}
+
+.navbar {
+    background-color: #3c1f6e;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+
+/* Add z-index to header and footer to ensure they are above the main content */
+app-header,
+app-footer {
+    z-index: 1000;
+    position: relative;
+}

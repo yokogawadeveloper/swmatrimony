@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="main-container">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center mb-4">
+                <h1 class="display-4">About Us</h1>
+                <p class="lead">Connecting Hearts, Building Relationships</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../../../assets/aboutus/about-us.jpg" class="img-fluid rounded" alt="About Us Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p>
+                    At [Matrimony Site Name], our mission is to connect people looking for meaningful and long-lasting
+                    relationships.
+                    We understand the importance of finding the right partner and strive to provide a safe and trusted
+                    platform
+                    for individuals to meet and get to know each other.
+                </p>
+                <h2>Why Choose Us?</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Verified Profiles</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> User-friendly Interface</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Advanced Matching Algorithms</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 24/7 Customer Support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h2>Our Team</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4" *ngFor="let member of teamMembers">
+                        <img [src]="member.image" class="img-fluid rounded-circle mb-3" alt="{{ member.name }}">
+                        <h5>{{ member.name }}</h5>
+                        <p>{{ member.role }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

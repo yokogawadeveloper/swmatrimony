@@ -1,0 +1,39 @@
+nav {
+    height: 120px;
+    background-image: url(../../../assets/backgrounds/headerbg.png);
+}
+
+nav .logo {
+    width: 150px;
+    height: auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+nav button {
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+nav ul li  {
+    list-style: none;
+    padding: 0 10px;
+
+}
+
+nav ul .call-us {
+    border: 1px solid #1288cc;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #1288cc;
+}

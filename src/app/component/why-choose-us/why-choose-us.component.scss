@@ -1,0 +1,64 @@
+.main-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e20c57;
+    margin: 0 auto;
+}
+
+.bg-dark {
+    background-color: #1a0933 !important;
+}
+
+.bg-purple {
+    background-color: #3c1f6e;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+    font-size: 2.5rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.card:hover .icon-wrapper {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-title {
+    color: #ffd700;
+    /* Change to a gold color on hover */
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* Optional: Add a subtle background color change on hover */
+.card:hover {
+    background-color: #4c2a8e;
+}
