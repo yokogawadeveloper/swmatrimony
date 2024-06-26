@@ -1,9 +1,17 @@
+/* Ensure the header and nav drawer are on top */
+app-header {
+    position: relative;
+    z-index: 1000;
+}
+
 .main-container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../../../assets/accounts/register-bg.png')
+    background-image: url('../../../assets/accounts/register-bg.png');
+    z-index: 1;
+    /* Lower z-index than the header */
 }
 
 .card {
@@ -11,6 +19,10 @@
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* Ensure z-index applies */
+    z-index: 2;
+    /* Higher than the main-container but lower than the header */
 }
 
 .card-title {
@@ -20,7 +32,7 @@
     text-align: center;
 }
 
-.text-center{
+.text-center {
     text-align: center;
     color: white;
 }
@@ -50,8 +62,7 @@
     background-color: #1a052a;
 }
 
-
-// typewriter effect
+/* Typewriter effect */
 .typewriter p {
     font-size: 20px;
     color: white;
@@ -74,11 +85,11 @@
 /* The typing effect */
 @keyframes typing {
     from {
-        width: 0
+        width: 0;
     }
 
     to {
-        width: 100%
+        width: 100%;
     }
 }
 
@@ -87,7 +98,7 @@
 
     from,
     to {
-        border-color: transparent
+        border-color: transparent;
     }
 
     50% {
@@ -95,8 +106,7 @@
     }
 }
 
-// Media Query
-
+/* Media Query */
 @media (max-width: 768px) {
     .card {
         border-radius: 15px 15px 0 0;

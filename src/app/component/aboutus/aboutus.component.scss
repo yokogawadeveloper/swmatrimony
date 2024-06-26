@@ -1,0 +1,57 @@
+/* Add these styles to your global styles.css file or the specific component's CSS file */
+
+.main-container {
+    padding-bottom: 50px;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-equal-height .card-img-top {
+    object-fit: cover;
+    height: 200px;
+    /* Adjust this value as needed */
+}
+
+.card-equal-height .card-body {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 20px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+}
