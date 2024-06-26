@@ -10,17 +10,17 @@ export class AboutUsComponent implements OnInit {
     {
       name: 'John Doe',
       role: 'CEO & Founder',
-      image: 'assets/john-doe.jpg'
+      image: 'https://i.imgur.com/FQBrQnH.jpg'
     },
     {
       name: 'Jane Smith',
       role: 'Chief Marketing Officer',
-      image: 'assets/jane-smith.jpg'
+      image: 'https://i.imgur.com/FQBrQnH.jpg'
     },
     {
       name: 'Emily Johnson',
       role: 'Lead Developer',
-      image: 'assets/emily-johnson.jpg'
+      image: 'https://i.imgur.com/FQBrQnH.jpg'
     }
   ];
 
