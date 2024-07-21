@@ -1,44 +1,34 @@
-<div class="signup-container">
+<div class="main-container">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 left-section">
-                <div class="logo">
-                    <img src="https://i.imgur.com/ttAjMqi.png" alt="logo" height="100">
-                </div>
-                <h1 class="tagline">
-                    Plan your<br>
-                    perfect<br>
-                    wedding with<br>
-                    us
-                </h1>
-            </div>
-            <div class="col-md-6 right-section">
-                <div class="card signup-card">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title">Sign Up</h2>
-                        <p class="card-subtitle">Enter details to create your account</p>
+                        <h2 class="card-title text-center">Login Your Account</h2>
                         <form>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your name">
+                                <input type="text" class="form-control" placeholder="Username/Email">
                             </div>
-
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email address">
-                            </div>
-
                             <div class="form-group">
                                 <input type="password" class="form-control" placeholder="Password">
                             </div>
-
-
-                            <button type="submit" class="btn btn-block btn-signup">Sign up</button>
+                            <button type="submit" class="btn btn-dark btn-block">Login</button>
                         </form>
                         <div class="social-signup">
-                            <button class="btn btn-google"><i class="fab fa-google"></i> Sign up with Google</button>
-                            <button class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Sign up with
+                            <button class="btn btn-google"><i class="fab fa-google"></i> Login with Google</button>
+                            <button class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Login with
                                 Facebook</button>
                         </div>
-                        <p class="login-link">Already have an account? <a href="#">Sign in</a></p>
+                        <p class="text-center mt-3">Don't have an account? <span><a routerLink="/register">Sign
+                                    Up</a></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-0 ">
+                <div class="welcome-message">
+                    <div class="welcome-message-content typewriter">
+                        <h1>Welcome Back!</h1>
+                        <p>We're glad to see you again. Login to continue.</p>
                     </div>
                 </div>
             </div>

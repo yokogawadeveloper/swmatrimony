@@ -2,17 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../assets/backgrounds/introbg.png);
+    background: #F7F7FF;
     background-size: cover;
     background-position: center;
-    color: white;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    /* Adjust these custom properties to the actual heights of your header and footer */
 }
 
-.bg-dark {
-    background-color: #1a0933 !important;
-}
 
 .bg-purple {
     background-color: #3c1f6e;

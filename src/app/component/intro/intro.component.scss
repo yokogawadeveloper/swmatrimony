@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../assets/backgrounds/introbg.png);
+    background: #F7F7FF;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     height: 100vh;
+    border-bottom: 1px solid rgb(101, 10, 10);
 }
 
 .row {
@@ -29,7 +30,12 @@
 h1 {
     margin-top: 0;
     margin-bottom: .5rem;
-    font-weight: 40;
+    font-weight: bold;
     line-height: 1;
+    
+}
+
+button a{
+    color: white;
 
 }

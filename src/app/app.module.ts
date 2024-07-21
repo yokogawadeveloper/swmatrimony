@@ -14,6 +14,9 @@ import { HomeComponent } from './component/home/home.component';
 import { RegisterComponent } from './component/register/register.component';
 import { LoginComponent } from './component/login/login.component';
 import { AboutusComponent } from './component/aboutus/aboutus.component';
+import { HighprofileComponent } from './component/highprofile/highprofile.component';
+import { ProfileComponent } from './component/profile/profile.component';
+import { SearchComponent } from './component/search/search.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { AboutusComponent } from './component/aboutus/aboutus.component';
     HomeComponent,
     RegisterComponent,
     LoginComponent,
-    AboutusComponent
+    AboutusComponent,
+    HighprofileComponent,
+    ProfileComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -37,4 +43,6 @@ import { AboutusComponent } from './component/aboutus/aboutus.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

@@ -1,179 +1,202 @@
-.signup-container {
-    min-height: 100vh;
-    background: linear-gradient(to right, rgb(163, 62, 62), rgb(232, 178, 205));
-    padding: 20px;
+.main-container {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-image: url('../../../assets/accounts/register-bg.png');
+    z-index: 1;
+    /* Lower z-index than the header */
 }
 
-.container-fluid {
-    padding: 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/accounts/login-bg2.jpg);
-    background-size: cover;
-    background-position: center;
+.main-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
 }
 
-.left-section,
-.right-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-}
-
-.left-section {
-    background-size: cover;
-    background-position: center;
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
     position: relative;
 }
 
-.left-section h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #1c070f, #542506, #660d66, #635c1b);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    text-align: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
-.tagline {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.2;
-    position: absolute;
-    bottom: 40px;
-}
-
-.right-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.signup-card {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-}
-
 .card-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.card-subtitle {
-    color: #666;
+    color: #4a0e71;
+    font-size: 1.8rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.text-center {
+    text-align: center;
+}
+
+.text-center a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
 }
 
 .form-control {
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px 15px;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
 }
 
-.btn-signup {
-    background-color: #f48fb1;
-    color: white;
+.btn-dark {
+    background-color: #4a0e71;
+    border: none;
+    border-radius: 20px;
     padding: 10px;
     font-weight: bold;
-    margin-top: 10px;
+    color: white;
     width: 100%;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #3a0b5a;
 }
 
 .social-signup {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
 .btn-google,
 .btn-facebook {
-    flex: 1;
-    margin: 0 5px;
-    padding: 10px;
-    font-size: 14px;
+    width: 45%;
+    /* Reduced width */
+    padding: 8px;
+    /* Reduced padding */
+    border: none;
+    border-radius: 15px;
+    /* Adjusted border-radius */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    /* Reduced font-size */
+    transition: background-color 0.3s;
 }
 
 .btn-google {
-    background-color: white;
-    color: #444;
-    border: 1px solid #ddd;
-}
-
-.btn-facebook {
-    background-color: #1877f2;
+    background-color: #db4437;
     color: white;
 }
 
-.login-link {
+.btn-google:hover {
+    background-color: #c23321;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.btn-facebook:hover {
+    background-color: #2d4373;
+}
+
+/* Typewriter effect */
+.typewriter p {
+    font-size: 20px;
+    color: white;
     text-align: center;
     margin-top: 20px;
 }
 
-.login-link a {
-    color: #f48fb1;
-    text-decoration: none;
+.typewriter h1 {
+    overflow: hidden;
+    border-right: 2px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    color: white;
+    animation:
+        typing 3.5s steps(40, end) infinite,
+        blink-caret .75s step-end infinite;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-
-    .left-section,
-    .right-section {
-        padding: 20px;
+@keyframes typing {
+    from {
+        width: 0;
     }
 
-    .tagline {
-        font-size: 32px;
-        bottom: 20px;
-    }
-
-    .card-title {
-        font-size: 20px;
-    }
-
-    .card-subtitle {
-        font-size: 14px;
-    }
-
-    .signup-card {
-        padding: 15px;
-    }
-
-    .form-control {
-        padding: 10px;
-    }
-
-    .btn-google,
-    .btn-facebook {
-        margin: 5px 0;
+    to {
         width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .card {
+        border-radius: 15px;
     }
 
     .social-signup {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .btn-google,
+    .btn-facebook {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        padding: 8px 10px;
+    }
+
+    .btn-dark {
+        padding: 8px;
+    }
+
+    .typewriter h1 {
+        font-size: 1.2rem;
+    }
+
+    .typewriter p {
+        font-size: 16px;
     }
 }

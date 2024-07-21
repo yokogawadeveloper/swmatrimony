@@ -1,19 +1,25 @@
-/* Add these styles to your global styles.css file or the specific component's CSS file */
 
 .main-container {
-    padding-bottom: 50px;
+    background: #F7F7FF;  
 }
 
 h1,
 h2 {
+    color: black;
     font-weight: bold;
 }
 
 p {
+    color: black;
     line-height: 1.6;
 }
 
+li{
+    color: black;
+}
+
 .card {
+    background: black;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
