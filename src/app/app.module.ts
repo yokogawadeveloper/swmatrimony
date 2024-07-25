@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// other component
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { IntroComponent } from './component/intro/intro.component';
@@ -17,6 +18,8 @@ import { AboutusComponent } from './component/aboutus/aboutus.component';
 import { HighprofileComponent } from './component/highprofile/highprofile.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { SearchComponent } from './component/search/search.component';
+import { SettingsComponent } from './component/settings/settings.component';
+import { RecommendationComponent } from './component/recommendation/recommendation.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +37,14 @@ import { SearchComponent } from './component/search/search.component';
     AboutusComponent,
     HighprofileComponent,
     ProfileComponent,
-    SearchComponent
+    SearchComponent,
+    SettingsComponent,
+    RecommendationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

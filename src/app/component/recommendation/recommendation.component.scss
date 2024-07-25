@@ -1,0 +1,138 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: gray;
+}
+
+.star-rating {
+    font-size: 0.8rem;
+    /* Ensuring the latest font-size specification is applied */
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    /* Ensuring the latest font-size specification is applied */
+    margin-bottom: 1rem;
+}
+
+.btn-sm {
+    font-size: 0.7rem;
+    /* Ensuring the latest font-size specification is applied */
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    position: relative;
+    /* Added to position the rainbow effect */
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px auto 0;
+    border: 3px solid #8e44ad;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.btn-primary {
+    background-color: #8e44ad;
+    border-color: #8e44ad;
+}
+
+.btn-outline-primary {
+    color: #8e44ad;
+    border-color: #8e44ad;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+/* Animation for cards */
+.animate-card {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner .carousel-item.active .animate-card {
+    transform: translateX(0);
+}
+
+.carousel-inner .carousel-item-next .animate-card,
+.carousel-inner .carousel-item-prev .animate-card {
+    transform: translateX(100%);
+}
+
+.carousel-inner .carousel-item-next .animate-card {
+    transform: translateX(-100%);
+}
+
+/* Rainbow hover effect */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover::before {
+    opacity: 1;
+    animation: rainbow 1s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

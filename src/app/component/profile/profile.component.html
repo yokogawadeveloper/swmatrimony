@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="profile-container">
     <div class="profile-header">
-        <img src="profile-image-url.jpg" alt="Profile Picture" class="profile-img">
+        <img src="https://i.imgur.com/OflyaGo.jpg" alt="Profile Picture" class="profile-img">
         <div class="profile-info">
             <h1>John Doe</h1>
             <p>ID: WEB16662446HNM</p>
@@ -23,20 +23,12 @@
         <p>Phone: +91 1234567890</p>
     </div>
     <div class="profile-actions">
-        <button class="action-button">Send Interest</button>
-        <button class="action-button">Contact Now</button>
+        <button class="action-button"><i class="fa fa-heart"></i></button>
+        <button class="action-button"><i class="fa fa-mobile-phone"></i></button>
     </div>
     <div class="profile-recommended">
-        <h2>Recommended</h2>
-        <div class="recommended-item">
-            <img src="recommended1.jpg" alt="Recommended 1" class="recommended-img">
-            <p>Recommended Profile 1</p>
-        </div>
-        <div class="recommended-item">
-            <img src="recommended2.jpg" alt="Recommended 2" class="recommended-img">
-            <p>Recommended Profile 2</p>
-        </div>
-        <!-- Add more recommended items as needed -->
+        <h2>Our Recommendation Profile</h2>
+        <app-recommendation></app-recommendation>
     </div>
 </div>
 <app-footer></app-footer>

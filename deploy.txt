@@ -1,5 +1,5 @@
 Step 1 - ng add angular-cli-ghpages
-Step 2 - push Code to githubRepo
+Step 2 - push Code to githubRepo without any buid 
 Step 3 - go to repo setting and select main branch and save
 Step 4 - build application using below cmd
       ng build --base-href "https://yokogawadeveloper.github.io/swmatrimony/"
